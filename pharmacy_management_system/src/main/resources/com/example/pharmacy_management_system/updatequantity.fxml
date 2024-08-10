@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy_management_system.UpdateQuantity">
+   <children>
+      <AnchorPane prefHeight="68.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label alignment="CENTER" layoutY="25.0" prefHeight="18.0" prefWidth="600.0" text="UPDATE MEDICINE STOCK" textFill="#faf5f5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="88.0" layoutY="90.0" prefHeight="18.0" prefWidth="98.0" text="Medicine Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="medicineNameTextField" layoutX="88.0" layoutY="127.0" prefHeight="26.0" prefWidth="395.0" />
+      <Label layoutX="88.0" layoutY="174.0" prefHeight="18.0" prefWidth="98.0" text="Quantity">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quantityTextField" layoutX="88.0" layoutY="211.0" prefHeight="26.0" prefWidth="395.0" />
+      <Button fx:id="updateButton" layoutX="88.0" layoutY="303.0" mnemonicParsing="false" onAction="#updateButtonOnAction" prefHeight="26.0" prefWidth="395.0" style="-fx-background-color: #000000;" text="Update" textFill="#f7ebeb">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="confirmLabel" alignment="CENTER" layoutX="1.0" layoutY="273.0" prefHeight="18.0" prefWidth="600.0" textFill="#030202" />
+      <Button fx:id="closeButton" layoutX="88.0" layoutY="347.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="26.0" prefWidth="395.0" style="-fx-background-color: #000000;" text="Close" textFill="#f7ebeb">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

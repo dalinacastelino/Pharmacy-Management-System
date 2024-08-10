@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy_management_system.SearchOrderDetails">
+   <children>
+      <TableView fx:id="orderDetailsTableView" layoutX="30.0" layoutY="62.0" prefHeight="502.0" prefWidth="1020.0">
+        <columns>
+          <TableColumn fx:id="idTableColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="customerNameTableColumn" prefWidth="252.79994201660156" text="Customer Name" />
+            <TableColumn fx:id="phoneNumberTableColumn" prefWidth="201.60000610351562" text="Phone Number" />
+            <TableColumn fx:id="medicineNameTableColumn" prefWidth="235.20001220703125" text="Medicine Name" />
+            <TableColumn fx:id="quantityTableColumn" prefWidth="129.5999755859375" text="Quantity" />
+            <TableColumn fx:id="priceTableColumn" prefWidth="126.40008544921875" text="Amount" />
+        </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="27.0" prefHeight="20.0" prefWidth="106.0" text="Search Records">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="keywordTextField" layoutX="149.0" layoutY="24.0" prefHeight="25.0" prefWidth="899.0" promptText="Keyword...." />
+   </children>
+</Pane>
